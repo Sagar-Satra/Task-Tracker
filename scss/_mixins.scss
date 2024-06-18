@@ -1,0 +1,25 @@
+@mixin button-hover-effect(){
+    @extend .text-special-btn-green;
+    @extend .element-bkg-primary;
+}
+
+@mixin flex-items-layout($flex-value,$direction-value,$cross-axis-value,$main-axis-value){
+    display: $flex-value;
+    flex-direction: $direction-value;
+    align-items: $cross-axis-value;
+    justify-content: $main-axis-value;
+}
+
+@mixin common-button(){
+    min-width: 100px;
+    @extend .element-bkg-special-btn-green;
+    border: none;
+    @extend .element-bkg-acqua-marine;
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 10px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+}

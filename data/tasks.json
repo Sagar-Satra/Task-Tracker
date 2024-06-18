@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Task 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iste error maiores provident odio aliquam sapiente, ut dolores recusandae blanditiis voluptas accusamus unde atque. Blanditiis.",
+        "creationDate": "2022-06-01 02:00",
+        "completed": false
+    },
+    {
+        "title": "Task 2",
+        "description": "This is the description for task 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iste error maiores provident odio aliquam sapiente, ipsam accusantium sit similique accusamus unde atque. Blanditiis.",
+        "creationDate": "2024-07-08 10:05",
+        "completed": false
+    },
+    {
+        "title": "Task 3",
+        "description": "This is the description for task 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iste error maiores provident odio aliquam sapiente, voluptasantium sit similique accusamus unde atque. Blanditiis.",
+        "creationDate": "2023-05-18 01:15",
+        "completed": false
+    }
+]

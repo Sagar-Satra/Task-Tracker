@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker App</title>
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+<body>
+        <div class="container">
+            <div><h2>Task Tracker Application</h2></div>
+            <div class="task-buttons">
+                <button class="create-task-details">Create Task</button>
+                <!-- <button class="delete-task">Delete Task</button> -->
+            </div>
+            <div id="task-fields" class="hidden">
+                <input type="text" id="task-title" placeholder="Title">
+                <textarea id="task-Description" placeholder="Description"></textarea>
+                <button class="save-Task-Button">Save Task</button>
+            </div>
+            <div class="task-list-container">
+                <!--Task will appear here-->
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>

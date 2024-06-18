@@ -1,0 +1,14 @@
+
+  @each $key,$val in $colors {
+    .text-#{$key}{
+        color:$val;
+    }
+
+    .element-bkg-#{$key}{
+        background-color: $val;
+    }
+
+    .icon-#{$key}{
+        color: $val;
+    }
+}

@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    font-family:Verdana, Arial, sans-serif;
+  }
+
+body{
+    display: block;
+    margin: 0;
+  }
+
+  // styling for the container and HTML elements
+.container{
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#bdc3c7,#4d6c8a);
+    @include flex-items-layout(flex,column,center,flex-start);
+
+    & > div {
+        width: 100%;
+        max-width: 600px;
+        margin: 2px auto;
+        padding: 5px 15px 5px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    & div > h2{
+        margin: 5px auto 8px;
+        padding: 0px 10px;
+        text-align: center;
+    } 
+
+    & .task-buttons{
+        background: linear-gradient(180deg,#e6e614,#34da4d);
+        @include flex-items-layout(flex,row,center,space-around);
+        text-align: center;
+
+        & > button{
+            border: none;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            outline: none;
+            background: transparent;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 6px;
+            margin: 0px;
+
+            &:hover{
+                @include button-hover-effect();
+            }
+        }
+        
+    }
+    & #task-fields{
+        @include flex-items-layout(flex,column,flex-start,space-evenly);
+        height: 25vh;
+
+        &.hidden {
+            display: none;
+        }
+
+        & input, & textarea{
+            margin: 5px 0px;
+            padding: 5px 10px;
+            height: 40px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background: linear-gradient(180deg,#ffffff, aqua);
+
+        }
+
+        & textarea{
+            height: 12vh;
+        }
+
+        & .save-Task-Button{
+            @include common-button();
+
+            &:hover{
+                @include button-hover-effect();
+            }
+        }
+    }
+
+}
+
+// Styling for elements to be created using Javascript and Json data
+    .task-list-container{
+        .task-details {
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            padding: 2px 15px;
+            margin: 5px 5px;
+            color: $primary-color;
+            position: relative;
+            background: linear-gradient(180deg,#2e5eff, rgb(225, 81, 86));
+
+            & .t-title {
+                font-weight: 900;
+                height: 22px;
+                margin: 5px 2px;
+                padding: 0px 2px;
+                font-size: larger;
+            }
+
+            .t-description {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                transition: all 0.1s ease;
+                font-size: larger;
+
+                
+            }
+
+            .t-date {
+                display: none;
+
+                &.expanded {
+                    display: block;
+                    margin: 3px;
+                    padding: 2px;
+                }
+            }
+
+            .toggle-checkbox {
+                position: absolute;
+                top: 10px;
+                right: 50px;
+            }
+        }
+    }
+
+    // individual properties for styling effects
+    .completed {
+        text-decoration: line-through;
+    }
+    .hidden {
+        display: none;
+    }
+
+    .toggle-delete-btn{
+        font-size: x-small;
+        border: none;
+        background-color: red;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    
+    .display-as-block {
+        margin: 5px 0px;
+        padding: 5px 10px;
+        max-height: max-content;
+        width: 89%;
+        display: block;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: linear-gradient(180deg,#ffffff, rgb(241, 215, 230));
+        
+    }
+
+    .extra-height{
+        height: 15vh;
+    }
+    
+    .edit-Task-Button{
+        @include common-button();
+
+        &:hover{
+            @include button-hover-effect();
+        }
+    }

@@ -1,0 +1,13 @@
+// theme text colors
+$primary-color:white;
+$secondary-color:#666;
+$default-color:black;
+
+// theme background colors
+$primary-background-color:#e9e7e7;
+$secondary-background-color:#ffffff;
+$form-section-background-color:rgba(128, 235, 230, 0.349);
+$card-background-color:rgba(120, 122, 122, 0.071);
+
+// color library
+$colors:("primary":$primary-color, "secondary":$secondary-color, "red":red,"blue":blue,"light-blue":rgba(78, 96, 229, 0.635),"grey":#ccc,"green":green,"light-green":rgba(43, 241, 43, 0.782),"pink":pink,"violet":violet,"orange":orange,"special-btn-green":#04AA6D,"acqua-marine":aqua);
